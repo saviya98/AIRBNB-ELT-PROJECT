@@ -1,3 +1,7 @@
+-- Intentionally ephemeral: this model only exists to feed
+-- snapshots/dim_bookings.yml (relation: ref('bookings')). It is never
+-- materialized as its own table/view -- dbt inlines it as a CTE wherever
+-- it's ref()'d.
 {{ config(
     materialized='ephemeral'
 ) }}
