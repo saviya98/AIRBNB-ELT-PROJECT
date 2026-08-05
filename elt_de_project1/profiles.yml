@@ -1,13 +1,13 @@
 elt_de_project1:
   outputs:
     dev:
-      account: OAVOPEV-LP43199
+      account: ************
       database: AIRBNB
-      password: $@viM@no130718
+      password: **********
       role: ACCOUNTADMIN
       schema: dbt_schema
       threads: 1
       type: snowflake
-      user: savithd07
+      user: ************
       warehouse: COMPUTE_WH
   target: dev
