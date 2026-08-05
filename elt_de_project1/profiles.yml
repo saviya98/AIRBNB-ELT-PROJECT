@@ -1,0 +1,13 @@
+elt_de_project1:
+  outputs:
+    dev:
+      account: OAVOPEV-LP43199
+      database: AIRBNB
+      password: $@viM@no130718
+      role: ACCOUNTADMIN
+      schema: dbt_schema
+      threads: 1
+      type: snowflake
+      user: savithd07
+      warehouse: COMPUTE_WH
+  target: dev
