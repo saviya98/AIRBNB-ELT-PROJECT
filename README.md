@@ -4,6 +4,7 @@ An end-to-end ELT (Extract, Load, Transform) pipeline that ingests raw Airbnb-st
 
 ## Architecture
 
+![Architecture](Screenshots/ABN.drawio.png)
 
 **Flow summary:** raw CSVs are uploaded to an S3 bucket, then loaded into a Snowflake `STAGING` schema (`COPY INTO`). dbt takes over from there — Bronze models land the raw staged data as incremental tables, Silver models clean and apply business logic, and Gold builds a one-big-table (`obt`) that's joined against `FACT` and SCD Type 2 dimension snapshots for historical tracking of listings, hosts, and bookings.
 
